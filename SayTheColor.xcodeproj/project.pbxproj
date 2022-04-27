@@ -11,6 +11,12 @@
 		DF6859A12816C651004E59BA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6859A02816C651004E59BA /* ContentView.swift */; };
 		DF6859A32816C655004E59BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF6859A22816C655004E59BA /* Assets.xcassets */; };
 		DF6859A62816C655004E59BA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF6859A52816C655004E59BA /* Preview Assets.xcassets */; };
+		DF6859AD2816C681004E59BA /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6859AC2816C681004E59BA /* GameView.swift */; };
+		DF6859AF2816C69F004E59BA /* AlertMic.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6859AE2816C69F004E59BA /* AlertMic.swift */; };
+		DF6859B42816C6B1004E59BA /* MicrophoneMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6859B02816C6B0004E59BA /* MicrophoneMonitor.swift */; };
+		DF6859B52816C6B1004E59BA /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6859B12816C6B0004E59BA /* ScoreView.swift */; };
+		DF6859B62816C6B1004E59BA /* Variable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6859B22816C6B1004E59BA /* Variable.swift */; };
+		DF6859B72816C6B1004E59BA /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6859B32816C6B1004E59BA /* SpeechRecognizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,13 @@
 		DF6859A02816C651004E59BA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DF6859A22816C655004E59BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF6859A52816C655004E59BA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DF6859AC2816C681004E59BA /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		DF6859AE2816C69F004E59BA /* AlertMic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertMic.swift; sourceTree = "<group>"; };
+		DF6859B02816C6B0004E59BA /* MicrophoneMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MicrophoneMonitor.swift; sourceTree = "<group>"; };
+		DF6859B12816C6B0004E59BA /* ScoreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
+		DF6859B22816C6B1004E59BA /* Variable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Variable.swift; sourceTree = "<group>"; };
+		DF6859B32816C6B1004E59BA /* SpeechRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
+		DF6859B82816C798004E59BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +64,15 @@
 		DF68599D2816C651004E59BA /* SayTheColor */ = {
 			isa = PBXGroup;
 			children = (
+				DF6859B82816C798004E59BA /* Info.plist */,
 				DF68599E2816C651004E59BA /* SayTheColorApp.swift */,
 				DF6859A02816C651004E59BA /* ContentView.swift */,
+				DF6859AC2816C681004E59BA /* GameView.swift */,
+				DF6859AE2816C69F004E59BA /* AlertMic.swift */,
+				DF6859B02816C6B0004E59BA /* MicrophoneMonitor.swift */,
+				DF6859B12816C6B0004E59BA /* ScoreView.swift */,
+				DF6859B32816C6B1004E59BA /* SpeechRecognizer.swift */,
+				DF6859B22816C6B1004E59BA /* Variable.swift */,
 				DF6859A22816C655004E59BA /* Assets.xcassets */,
 				DF6859A42816C655004E59BA /* Preview Content */,
 			);
@@ -138,7 +158,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF6859A12816C651004E59BA /* ContentView.swift in Sources */,
+				DF6859B72816C6B1004E59BA /* SpeechRecognizer.swift in Sources */,
+				DF6859B62816C6B1004E59BA /* Variable.swift in Sources */,
+				DF6859AD2816C681004E59BA /* GameView.swift in Sources */,
+				DF6859AF2816C69F004E59BA /* AlertMic.swift in Sources */,
+				DF6859B42816C6B1004E59BA /* MicrophoneMonitor.swift in Sources */,
 				DF68599F2816C651004E59BA /* SayTheColorApp.swift in Sources */,
+				DF6859B52816C6B1004E59BA /* ScoreView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,11 +296,15 @@
 				DEVELOPMENT_TEAM = 6525BU9D84;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SayTheColor/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Record your voice to recognize words";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Process the voice to recognize words";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,11 +329,15 @@
 				DEVELOPMENT_TEAM = 6525BU9D84;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SayTheColor/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Record your voice to recognize words";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Process the voice to recognize words";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
